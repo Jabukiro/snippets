@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/quickAction.css">
+</head>
+<body>
+    <div data-is-open="false" class="quickAction quickActionClosed " id="quickAction">
+        <div class="quickActionOverlay"></div>
+        <button aria-label="Quick actions" class="quickActionButton">
+            <ul class="quickActionDots">
+                <li class="quickActionFirstDot"></li>
+                <li class="quickActionSecondDot"></li>
+                <li class="quickActionThirdDot"></li>
+            </ul>
+        </button>
+        <div style="display: none;" id="quickActionBar" class="quickActionBar">
+            <a href="tel:0403543403" data-content="0403543403" aria-label="Phone" data-quick-action="action">
+                <div>
+                    <img src="media/phone.svg" alt="Phone Contact" srcset="">
+                </div>
+            </a>
+            <a href="mailto:info@linespeedapt.com" target="_self" data-content="info@linespeedapt.com" aria-label="Email" data-quick-action="action">
+                <div>
+                    <img src="media/email.svg" alt="Mail Contact" srcset="">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/linespeedapt/?hl=en" target="_blank" data-content="https://www.instagram.com/linespeedapt/?hl=en" data-type="external" rel="noopener" aria-label="Instagram" data-quick-action="action">
+                <div style="fill:#fff">
+                    <div>
+                        <img src="media/insta.svg" alt="Instagram Link" srcset="">
+                    </div>
+                </div>
+            </a>
+            <div data-quick-action="separator"></div>
+            <a href="https://www.facebook.com/LinespeedAPT/" target="_blank" data-content="https://www.facebook.com/LinespeedAPT/" data-type="external" rel="noopener" aria-label="Facebook" data-quick-action="action">
+                <div>
+                    <img src="media/facebook.svg" alt="Facebook Link" srcset="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="js/quickAction.js"></script>
+</body>
+</html>
