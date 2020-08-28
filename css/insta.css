@@ -1,0 +1,193 @@
+html{
+    font:400 18px/1.555 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    margin:0;
+}
+body>div{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+}
+.instagram-feed {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+    line-height: 18px;
+    font-weight: 400;
+    overflow: hidden !important;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 150px;
+    min-height: 100px;
+}
+#instagram-feed-1 {
+    width: 500px;
+}
+#instagram-feed-1 .instagram-feed-posts-item, #instagram-feed-1 .instagram-feed-posts-item-content, #instagram-feed-1 .instagram-feed-posts-item-text, #instagram-feed-1 .instagram-feed-posts-item a, #instagram-feed-1 .instagram-feed-posts-item a:hover {
+	color: rgb(255, 255, 255);
+}
+.instagram-feed-container {
+    width: 100%;
+}
+.instagram-feed-content{
+    position: relative;
+    width: 100%;
+}
+.instagram-feed-posts-container{
+    width: 100%;
+}
+.instagram-feed {
+	font-size: 14px;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+	line-height: 18px;
+	font-weight: 400;
+}
+.instagram-slider {
+	position: relative;
+	height: 100%;
+	user-select: none;
+	overflow: hidden;
+}
+.instagram-feed-posts {
+	width: 100%;
+}
+.instagram-feed a {
+	text-decoration: none;
+	color: #000;
+}
+.instagram-feed-posts-slider {
+	position: relative;
+	height: auto;
+	user-select: none;
+	cursor: -webkit-grab;
+	cursor: grab;
+	width: 100%;
+}
+.instagram-slider-inner {
+	z-index: 1;
+	position: relative;
+	height: 100%;
+	display: flex;
+	transition-property: transform;
+}
+.instagram-feed-posts-inner {
+	box-sizing: border-box;
+	position: relative;
+}
+.instagram-feed-posts-slider-inner {
+	z-index: 1;
+	position: relative;
+	height: auto;
+	display: flex;
+	width: 100%;
+}
+.instagram-slider-slide {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	overflow: hidden;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.instagram-feed-posts-view {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+}
+.instagram-feed-posts-view.instagram-slider-slide {
+	display: inline-flex;
+	width: 100%;
+	height: auto;
+}
+.instagram-feed-posts-item {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background: #fff;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.instagram-feed-posts-item a, .instagram-feed-posts-item a:hover {
+	color: #003569;
+}
+.instagram-feed-posts-item-visible.instagram-feed-posts-item-loaded {
+	opacity: 1;
+	visibility: visible;
+}
+.instagram-feed-posts-item-link {
+	cursor: pointer;
+}
+.instagram-feed-posts-item-template-tile .instagram-feed-posts-item-link {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+}
+.instagram-feed-posts-item-template-tile .instagram-feed-posts-item-media {
+	width: 100%;
+}
+.instagram-feed-posts-item-template-tile .instagram-feed-posts-item-overlay {
+	position: absolute;
+	z-index: 2;
+	top: -1px;
+	right: -1px;
+	bottom: -1px;
+	left: -1px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.3s, visibility 0.3s;
+	text-align: center;
+	box-sizing: border-box;
+	color: #fff;
+	background: rgba(0,0,0,0.8);
+	display: flex;
+	align-items: center;
+}
+.instagram-feed-posts-item-template-tile .instagram-feed-posts-item-image {
+	transition: transform 0.3s ease, filter 0.3s;
+	left: 50%;
+	transform: scale(1) translate(-50%, -50%);
+	transform-origin: 0 0;
+	backface-visibility: hidden;
+}
+.instagram-feed-posts-item-image-wrapper {
+	padding-top: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: -1px;
+}
+.instagram-feed-posts-item-image {
+	position: absolute;
+	width: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
+}
+.instagram-feed-posts-item-image-landscape .instagram-feed-posts-item-image {
+	height: 100% !important;
+	min-width: 100%;
+	max-width: inherit !important;
+}
+.instagram-feed-posts-item-image-icon {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 0.6em;
+	right: 0.6em;
+	width: 24px;
+	height: 24px;
+	transition: all 0.3s ease;
+}
