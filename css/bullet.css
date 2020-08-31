@@ -1,0 +1,9 @@
+.big-bullet-image{
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    border-radius: 75px;
+}
+.big-bullet-image img{
+    max-width: inherit;
+}
